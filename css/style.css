@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.social-media{
+    width: 1000px;
+    height: 50px;
+    /* background-color: black; */
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.name{
+    width: 70px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram, .telegram, .facebook, .wechat, .twitter, .pinterest,
+.snapchat, .youtube, .line, .tiktok, .messenger {
+    width: 44px;
+    height: 44px;
+    display: block;
+    box-shadow: 0px 0px 5px #787878;
+    border-radius: 50px;
+    transition: 1s;
+    background-color: blue;
+   
+}
+.social-media .instagram {
+    background: url(../img/social-media-icons.png) -5px -7px;
+    background-size: 180px;
+}
+.social-media .telegram{
+    background: url(../img/social-media-icons.png) -47px -7px;
+    background-size: 180px;
+}
+.social-media .facebook{
+    background: url(../img/social-media-icons.png) -89px -7px;
+    background-size: 180px;
+}
+.social-media .wechat{
+    background: url(../img/social-media-icons.png) -5px -48px;
+    background-size: 180px;
+}
+.social-media .pinterest{
+    background: url(../img/social-media-icons.png) -47px -48px;
+    background-size: 180px;
+}
+.social-media .twitter{
+    background: url(../img/social-media-icons.png) -89px -48px;
+    background-size: 180px;
+}
+.social-media .snapchat{
+    background: url(../img/social-media-icons.png) -5px -90px;
+    background-size: 180px;
+}
+.social-media .youtube{
+    background: url(../img/social-media-icons.png) -47px -89.5px;
+    background-size: 180px;
+}
+.social-media .line{
+    background: url(../img/social-media-icons.png) -89px -89.5px;
+    background-size: 180px;
+}
+.social-media .tiktok{
+    background: url(../img/social-media-icons.png) -5px -131px;
+    background-size: 180px;
+}
+.social-media .messenger{
+    background: url(../img/social-media-icons.png) -47px -131px;
+    background-size: 180px;
+}
+.social-media .name:hover a{
+    transform: scale(3);
+    transform: rotate(-360deg);
+}
+.name:hover span{
+    visibility: visible;
+    font-size: 16px;
+    bottom: -20px;transition: 0.4s ease-out;
+}
+.social-media span{
+    width: 100%;
+    font-size: 8px;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    color: #181012;
+    visibility: hidden;
+    
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.animation{
+    width: 2000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    animation-name: running;
+    animation-duration: 15s;
+    animation-direction: inherit;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.slider{
+    width: 400px;
+    height: 50px;
+    left: 20%;
+    overflow: hidden;
+    margin: auto;
+}
+.contact{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    padding: 3px;
+    overflow: hidden;
+    float: left;
+}
+.c1{
+    color: #2200ff;
+}
+.c2{
+    color: green;
+}
+.c2{
+    color: #000000;
+}
+.contact p{
+    margin-top: 12px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+}
+.c1 span, .c2 span, .c3 span{ 
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+.c1 span{
+    background: url(../img/social-media-icons.png) -7px -55px;
+    background-size: 200px;
+}
+.c2 span{
+    background: url(../img/social-media-icons.png) -101px -9px;
+    background-size: 200px;
+    background-color: #2200ff;
+}
+.c3 span{
+    background: url(../img/social-media-icons.png) -7px -55px;
+    background-size: 200px;
+}
+@keyframes running{
+    0%{margin-left: 0px;}
+    10%{margin-left: 0px; }
+    20%{margin-left: -800px; }
+    30%{margin-left: -800px; }
+    40%{margin-left: -1600px; }
+    50%{margin-left: -1600px; }
+    60%{margin-left: -800px; }
+    70%{margin-left: -800px;}
+    80%{margin-left: -0px;}
+    90%{margin-left: -0px;}
+}
+/* ================== */
+.login{
+    width: 100%;
+    height: 600px;
+    margin: 40px auto;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login form{
+    width: 600px;
+    height: 350px;
+    padding: 40px;
+    background-color: #787878a8;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #7878788e;
+   
+}
+form label{
+    display: block;
+    margin: 10px 0px;
+    font-size: large;
+    color: white;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    padding: 5px;
+}
+.hover-1{
+    width: 120px;
+    height: 50px;
+    margin: 40px 0px;
+}
+
+.run-btn{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    color: #2200ff;
+    background-color: white;
+    transition: 0.2s;
+    pointer-events: none;
+    box-shadow: 1px 2px 5px gray;
+    border: none;
+    border-radius: 5px;
+}
+.hover-1:hover .run-btn{
+    transform: translate(400px);
+    background-color: #f5f5dc7e;
+
+}
+
+@keyframes buttonani {
+    0%{transform: rotate(3deg);}
+    100%{transform: rotate(-3deg);}
+}
+
+
+footer{
+    width: 100%;
+    background-color: darkslategrey;
+    padding: 20px 0px;
+}
+footer h4{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
